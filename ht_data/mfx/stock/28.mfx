@@ -1,0 +1,86 @@
+
+Processing...
+name: LFO Flanger
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_flanger
+mfx_post_level: 64
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 75
+  mod_src: 0
+  mod_int: 127
+  lfo_wave: 0
+  lfo_sync: 0
+  lfo_speed: 0
+  lfo_syncnote: 3
+  lfo_shape: 50
+  lfo_phase: 18
+  lfo_reset: 0
+  lfo_resetphase: 36
+  manual: 41
+  delay: 2
+  lo_damp: 15
+  hi_damp: 125
+  feedback: 79
+  fb_hicut: 126
+control_map:
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 4
+  min_value: 127
+  max_value: 0
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 0
+  min_value: 0
+  max_value: 127
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 0
+  min_value: 75
+  max_value: 50
+- source_control: fx_edit_x_lo
+  chain_index: mfx
+  target_param: 5
+  min_value: 12
+  max_value: 3
+- source_control: fx_edit_x_hi
+  chain_index: mfx
+  target_param: 5
+  min_value: 12
+  max_value: 121
+- source_control: fx_edit_x_hi
+  chain_index: mfx
+  target_param: 2
+  min_value: 64
+  max_value: 22
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!

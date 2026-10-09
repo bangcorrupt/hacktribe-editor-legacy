@@ -1,0 +1,93 @@
+
+Processing...
+name: Tape Delay
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_tape_echo
+mfx_post_level: 64
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 100
+  time_ratio: 40
+  sync_on: 1
+  s_note1: 8
+  s_note2: 8
+  time1: 19
+  time2: 19
+  delay_lag: 1
+  output_level: 53
+  tap1_level: 88
+  tap2_level: 88
+  feedback: 70
+  hi_damp: 92
+  lo_damp: 49
+  trim: 80
+  saturation: 47
+  gain: 53
+  gainshift: 5
+  lfo_wave: 2
+  lfo_depth: 0
+  lfo_speed: 45
+  lfo_reset: 0
+  pre_lpf: 109
+  spread: 100
+control_map:
+- source_control: fx_on
+  chain_index: input_level
+  target_param: 5
+  min_value: 0
+  max_value: 127
+- source_control: fx_edit_x
+  chain_index: mfx
+  target_param: 1
+  min_value: 46
+  max_value: 40
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 11
+  min_value: 29
+  max_value: 72
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 14
+  min_value: 60
+  max_value: 80
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 14
+  min_value: 60
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!

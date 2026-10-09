@@ -1,0 +1,92 @@
+
+Processing...
+name: Mod Delay
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_mod_delay
+mfx_post_level: 64
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 100
+  wet_spread: 98
+  input_trim: 80
+  pre_leq_gain: 36
+  pre_leq_frequency: 20
+  pre_heq_gain: 36
+  pre_heq_frequency: 44
+  delay_time_tempo_sync: 1
+  off_time_ratio: 65
+  off_l_delay_time: 47
+  off_r_delay_time: 41
+  on_time_ratio: 26
+  on_l_syncnote: 44
+  on_r_syncnote: 42
+  fb_type: 0
+  fb_depth: 90
+  high_damp: 54
+  low_damp: 19
+  mod_depth: 20
+  mod_wave: 0
+  mod_freq: 34
+  mod_rch_degree: 18
+  delay_lag: 0
+control_map:
+- source_control: fx_on
+  chain_index: input_level
+  target_param: 5
+  min_value: 0
+  max_value: 88
+- source_control: fx_edit_x
+  chain_index: mfx
+  target_param: 11
+  min_value: 46
+  max_value: 40
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 15
+  min_value: 44
+  max_value: 123
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 15
+  min_value: 44
+  max_value: 30
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 2
+  min_value: 80
+  max_value: 0
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 17
+  min_value: 1
+  max_value: 13
+- source_control: none
+  chain_index: mfx
+  target_param: 11
+  min_value: 44
+  max_value: 41
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!

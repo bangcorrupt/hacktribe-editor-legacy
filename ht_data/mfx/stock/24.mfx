@@ -1,0 +1,79 @@
+
+Processing...
+name: Compressor
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_sr1_comp
+mfx_post_level: 64
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 100
+  envelope_select: 0
+  threshold: 32
+  ratio: 10
+  knee: 9
+  attack: 2
+  release: 11
+  hold_time: 0
+  tube_sat: 30
+  output_gain: 58
+control_map:
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 0
+  min_value: 0
+  max_value: 127
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 4
+  min_value: 127
+  max_value: 0
+- source_control: fx_edit_y
+  chain_index: mfx
+  target_param: 2
+  min_value: 60
+  max_value: 0
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 0
+  min_value: 100
+  max_value: 0
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 9
+  min_value: 51
+  max_value: 72
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!

@@ -1,0 +1,86 @@
+
+Processing...
+name: Touch Wah
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_wah
+mfx_post_level: 64
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 100
+  wah_type: 0
+  mod_src: 0
+  mod_int: 127
+  control: 0
+  env_select: 1
+  env_response: 2
+  env_sens: 127
+  lfo_step: 0
+  lfo_wave: 0
+  lfo_sync: 0
+  lfo_speed: 51
+  lfo_syncnote: 6
+  lfo_rch_degree: 19
+  lfo_reset: 0
+  lfo_resetphase: 0
+  manual: 56
+control_map:
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 4
+  min_value: 127
+  max_value: 0
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 0
+  min_value: 0
+  max_value: 127
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 3
+  min_value: 100
+  max_value: 127
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 3
+  min_value: 100
+  max_value: 0
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 0
+  min_value: 100
+  max_value: 0
+- source_control: fx_edit_y_hi
+  chain_index: input_level
+  target_param: 1
+  min_value: 64
+  max_value: 104
+- source_control: none
+  chain_index: mfx
+  target_param: 1
+  min_value: 23
+  max_value: 30
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!
