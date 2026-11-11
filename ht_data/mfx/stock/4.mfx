@@ -1,0 +1,80 @@
+
+Processing...
+name: Room Reverb
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_room_reverb
+mfx_post_level: 64
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 100
+  time: 31
+  hi_damp: 100
+  pre_delay: 6
+  trim: 46
+  trim2: 127
+  lo_eq: 26
+  hi_eq: 18
+  pd_thru: 36
+  rev_level: 40
+  er_level: 2
+control_map:
+- source_control: fx_on
+  chain_index: input_level
+  target_param: 5
+  min_value: 0
+  max_value: 75
+- source_control: fx_edit_x
+  chain_index: mfx
+  target_param: 1
+  min_value: 23
+  max_value: 127
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 4
+  min_value: 42
+  max_value: 0
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 4
+  min_value: 42
+  max_value: 122
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!

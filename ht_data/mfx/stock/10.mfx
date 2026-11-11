@@ -1,0 +1,88 @@
+
+Processing...
+name: Jag Filter
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_multimodefilter
+mfx_post_level: 81
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 100
+  trim: 127
+  frequency: 127
+  resonance: 32
+  mod_source: 0
+  mod_lag: 64
+  lfo_sync: 1
+  lfo_speed: 48
+  lfo_syncnote: 16
+  lfo_reset: 0
+  lfo_resetphase: 36
+  freq_mod_int: 0
+  drive: 39
+  drive_mod_int: 63
+  drive_tone: 127
+  hpf_level: 0
+  bpf_level: 0
+  lpf_level: 127
+  lpf24_level: 0
+control_map:
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 0
+  min_value: 0
+  max_value: 127
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 4
+  min_value: 127
+  max_value: 0
+- source_control: fx_on
+  chain_index: mfx
+  target_param: 9
+  min_value: 0
+  max_value: 1
+- source_control: fx_edit_x
+  chain_index: mfx
+  target_param: 8
+  min_value: 5
+  max_value: 10
+- source_control: fx_edit_y
+  chain_index: mfx
+  target_param: 11
+  min_value: 126
+  max_value: 0
+- source_control: none
+  chain_index: mfx
+  target_param: 9
+  min_value: 0
+  max_value: 1
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!

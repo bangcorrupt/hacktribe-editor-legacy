@@ -1,0 +1,88 @@
+
+Processing...
+name: Chorus
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_chorus
+mfx_post_level: 64
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 50
+  mod_src: 0
+  mod_int: 91
+  lfo_wave: 1
+  lfo_sync: 0
+  lfo_speed: 27
+  lfo_sync_note: 5
+  lfo_phase: 36
+  lfo_reset: 0
+  lfo_reset_phase: 36
+  pre_leq_gain: 36
+  pre_leq_frequency: 16
+  pre_heq_gain: 36
+  pre_heq_frequency: 50
+  l_delay: 46
+  r_delay: 64
+  lo_damp: 26
+  hi_damp: 127
+  spread: 127
+control_map:
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 4
+  min_value: 127
+  max_value: 0
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 0
+  min_value: 0
+  max_value: 127
+- source_control: fx_edit_x_lo
+  chain_index: mfx
+  target_param: 5
+  min_value: 19
+  max_value: 0
+- source_control: fx_edit_x_hi
+  chain_index: mfx
+  target_param: 5
+  min_value: 19
+  max_value: 116
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 2
+  min_value: 29
+  max_value: 116
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 2
+  min_value: 29
+  max_value: 0
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 0
+  min_value: 50
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!

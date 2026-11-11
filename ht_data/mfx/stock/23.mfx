@@ -1,0 +1,84 @@
+
+Processing...
+name: Distortion
+ifx_1_device: nofx_thru
+ifx_1_post_level: 64
+ifx_1_pre_level: 127
+ifx_1_params: {}
+ifx_2_device: nofx_thru
+ifx_2_post_level: 64
+ifx_2_pre_level: 127
+ifx_2_params: {}
+mfx_device: M_distortion
+mfx_post_level: 64
+mfx_pre_level: 127
+mfx_params:
+  dry_wet: 0
+  gain: 23
+  pre_eq_frequency: 14
+  pre_eq_q: 5
+  pre_eq_gain: 36
+  post_eq1_frequency: 21
+  post_eq1_q: 40
+  post_eq1_gain: 36
+  post_eq2_frequency: 41
+  post_eq2_q: 11
+  post_eq2_gain: 36
+  post_eq3_frequency: 54
+  post_eq3_q: 5
+  post_eq3_gain: 36
+  output_level: 127
+control_map:
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 4
+  min_value: 127
+  max_value: 0
+- source_control: fx_on
+  chain_index: output_level
+  target_param: 0
+  min_value: 0
+  max_value: 127
+- source_control: fx_edit_y
+  chain_index: mfx
+  target_param: 0
+  min_value: 0
+  max_value: 100
+- source_control: fx_edit_y_lo
+  chain_index: mfx
+  target_param: 14
+  min_value: 91
+  max_value: 127
+- source_control: fx_edit_x
+  chain_index: mfx
+  target_param: 10
+  min_value: 20
+  max_value: 63
+- source_control: fx_edit_x
+  chain_index: mfx
+  target_param: 7
+  min_value: 52
+  max_value: 24
+- source_control: fx_edit_y_hi
+  chain_index: mfx
+  target_param: 1
+  min_value: 23
+  max_value: 30
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+- source_control: none
+  chain_index: ifx_1
+  target_param: 0
+  min_value: 0
+  max_value: 0
+
+
+Done!
